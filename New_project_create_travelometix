@@ -1,0 +1,51 @@
+ AB UTNAL
+
+
+|----------------------------------------------------------------------------
+| STEP 1  
+|----------------------------------------------------------------------------
+		Copy files from 192.168.0.87  /  SHARE (folder name) to your lacal
+
+
+
+|----------------------------------------------------------------------------
+| STEP 2
+|----------------------------------------------------------------------------
+		1) Import database to your localhost lampp,  use the following command for terminal
+		   /opt/lampp/bin/mysql -u <db_username> -p <db_name> < <sqlfilepath>
+		   Ex: /opt/lampp/bin/mysql -u root -p my_database < your_sql_file_path
+
+		2) Rename your project folder name
+
+
+
+|----------------------------------------------------------------------------
+| STEP 3
+|----------------------------------------------------------------------------
+		For Agent, B2C, Supervison
+		1) Change the CONSTANTS in 
+			|--->application
+			|----------->config
+			|-------------------->constants.php
+			CONSTANTS:  1) PROJECT_NAME: 'Your_project_name'
+						2) PROJECT_PARENT_NAME: 'Your_project_name'
+
+
+
+|----------------------------------------------------------------------------
+| STEP 4
+|----------------------------------------------------------------------------
+		For Agent, B2C, Supervison
+		1) Change the database config
+		    |--->application
+			|----------->config
+			|-------------------->developement
+			|---------------------------->database.php
+
+
+|----------------------------------------------------------------------------
+| STEP 5
+|----------------------------------------------------------------------------			
+        Change the project name(replace your project name) in table
+        Table_name:  domain_list
+        Feild_name:  domain_name

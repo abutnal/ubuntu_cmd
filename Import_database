@@ -1,0 +1,2 @@
+ /opt/lampp/bin/mysql -u root -p pdoex <'/opt/lampp/htdocs/databases/pdoex.sql' 
+

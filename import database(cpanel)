@@ -1,0 +1,2 @@
+[provabextranet@gains ~]$ mysql -u provabex_bizzmir -p provabex_bizzmirth < public_html/bizzmirth/bizzmth_bizzmirth.sql
+
